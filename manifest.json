@@ -1,0 +1,20 @@
+{
+
+    "manifest_version": 2,
+    "name": "Showroom Farmer",
+    "version": "1.0",
+  
+    "description": "Showroom Live auto farming extension.",
+  
+    "icons": {
+      "48": "icon.png"
+    },
+  
+    "content_scripts": [
+      {
+        "matches": ["*://*.showroom-live.com/*"],
+        "js": ["showroom_api.js", "showroom_farmer.js"]
+      }
+    ]
+  
+  }
